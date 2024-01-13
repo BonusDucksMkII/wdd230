@@ -16,18 +16,17 @@ footer{
 
 nav{
     background-color: black;
-    text-align: center;
     margin-bottom: 20px;
 }
 
 nav a{
     color: white;
     font-size: 28px;
-    height: 100%;
 }
 
-nav li{
+nav ul li{
     margin: 10px;
+    text-align: center;
 }
 
 main{

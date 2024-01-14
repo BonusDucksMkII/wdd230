@@ -8,6 +8,17 @@ header{
     background-color: royalblue;
     text-align: center;
     color: white;
+    height: 200px;
+}
+
+header img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 footer{

@@ -2,27 +2,28 @@
 
 * {
     font-family: 'Oswald', sans-serif;
+    text-align: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+body{
+    display: block;
 }
 
 header{
     background-color: royalblue;
-    text-align: center;
     color: white;
     height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-header img{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-header h1{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-footer{
-    text-align: center;
+#me{
+    margin: auto;
+    grid-column: 1/2;
+    height: auto;
+    width: auto;
 }
 
 nav{
@@ -33,16 +34,16 @@ nav{
 nav a{
     color: white;
     font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 nav ul li{
     margin: 10px;
-    text-align: center;
 }
 
 main{
     margin: 35px;
-    text-align: center;
 }
 
 main ul{
@@ -53,7 +54,8 @@ main ul{
 
 .card{
     margin: 35px;
-    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
 a:link{
@@ -65,5 +67,6 @@ a:hover{
 }
 
 footer{
-    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
 }

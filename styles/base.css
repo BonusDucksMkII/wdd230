@@ -5,6 +5,8 @@
     text-align: center;
     align-items: center;
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body{
@@ -20,7 +22,6 @@ header{
 }
 
 #me{
-    margin: auto;
     grid-column: 1/2;
     height: auto;
     width: auto;
@@ -34,7 +35,7 @@ nav{
 nav a{
     color: white;
     font-size: 28px;
-    margin-top: 20px;
+    margin-top: 200px;
     margin-bottom: 20px;
 }
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-@media screen and (min-width: 380px){
+@media screen and (min-width: 380px) and (max-width: 599px){
     *{
         font-family: 'Merriweather', serif;
     }
@@ -36,7 +36,7 @@
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) and (max-width: 799px){
     *{
         font-family: 'Merriweather', serif;
     }
@@ -84,7 +84,7 @@
     }
 }
 
-*{
+/* *{
     font-family: 'Merriweather', serif;
 }
 
@@ -128,9 +128,9 @@ h2{
 
 #card3{
     grid-column: 3/4;
-}
+} */
 
-/* @media screen and (min-width: 900px){
+@media screen and (min-width: 900px){
     *{
         font-family: 'Merriweather', serif;
     }
@@ -176,4 +176,4 @@ h2{
     #card3{
         grid-column: 3/4;
     }
-} */
+}

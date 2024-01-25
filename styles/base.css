@@ -30,17 +30,17 @@ header{
 nav{
     background-color: black;
     margin-bottom: 20px;
+    display: flex;
 }
 
-nav a{
+.navigation a{
     color: white;
     font-size: 28px;
-    margin-top: 200px;
-    margin-bottom: 20px;
+    padding: 10px;
 }
 
-nav ul li{
-    margin: 10px;
+.navigation{
+    list-style: none;
 }
 
 main{
@@ -48,7 +48,7 @@ main{
 }
 
 main ul{
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -70,4 +70,45 @@ a:hover{
 footer{
     border: 3px solid black;
     border-radius: 10px;
+}
+
+#menu{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+}
+
+#menu::before{
+    content:"≡";
+}
+
+#menu.open::before{
+    content:"X";
+}
+
+.open a{
+    display: block;
+}
+
+@media only screen and (min-width: 380px){
+    nav{
+        display: flex;
+    }
+
+    nav li{
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    #menu{
+        display: none;
+    }
 }

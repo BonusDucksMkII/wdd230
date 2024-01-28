@@ -1,0 +1,34 @@
+/* https://coolors.co/00487c-93b7be-f1fffa-d5c7bc-ff4a1c */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+:root {
+    --primary-color: #00487C;
+    --secondary-color: #f5904d;
+    --accent-1: #93B7BE;
+    --accent-2: #F1FFFA;
+    --accent-3: #D5C7BC;
+}
+
+* {
+    text-align: center;
+}
+
+h1{
+    font-family: 'Caveat', 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+
+#purpose{
+    display: flex;
+    align-self: center;
+    text-align: justify;
+    width: 70%;
+}
+
+#color1{
+    color: var(--primary-color);
+}
+
+#color2{
+    color: var(--secondary-color);
+}

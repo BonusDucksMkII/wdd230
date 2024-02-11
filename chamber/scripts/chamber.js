@@ -1,7 +1,15 @@
 const darkButton = document.querySelector("#dark-mode");
+const main = document.querySelector("main");
+
 darkButton.addEventListener("click", () => {
-    const main = document.querySelector("main");
-    main.classList.toggle('dark-mode');
+    console.log("clickd")
+    if (main.classList.contains('dark-mode')) {
+        // console.log("hi")
+        main.className = '';
+    } else {
+        // console.log("bye")
+        main.className = 'dark-mode';
+    }
 })
 
 // Date modified

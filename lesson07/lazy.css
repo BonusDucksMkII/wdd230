@@ -1,0 +1,37 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 45px;
+    text-align: center;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section{
+    display: flex;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    margin-top: 10px;
+    background: black;
+    animation: fade 5s;
+}
+
+footer{
+    text-align: center;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

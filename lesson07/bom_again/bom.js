@@ -14,7 +14,8 @@ function setChapterList(){
 }
 
 function deleteChapter(chapter){
-    chapter = chapter.slice(0, chapter.length - 1);
+    // Not sure about this line, the ❌ is contained in a different HTML object, so we don't need to slice anything?
+    // chapter = chapter.slice(0, chapter.length - 1);
     chaptersArray = chaptersArray.filter((item) => item !== chapter);
     setChapterList();
 }

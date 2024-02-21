@@ -1,8 +1,8 @@
-const listId = document.getElementById("list");
-const inputId = document.getElementById("favchap");
-const button = document.querySelector("button[type = submit]");
+const listId = document.getElementById('list');
+const inputId = document.getElementById('favchap');
+const button = document.querySelector('button[type = submit]');
 let chaptersArray = getChapterList() || [];
-localStorage.setItem("BOMfavChapters", JSON.stringify(chaptersArray));
+localStorage.setItem('BOMfavChapters', JSON.stringify(chaptersArray));
 
 
 function getChapterList(){
@@ -21,13 +21,13 @@ function deleteChapter(chapter){
 }
 
 function displayList(item){
-    let newList = document.createElement("li");
-    let newButton = document.createElement("button");
+    let newList = document.createElement('li');
+    let newButton = document.createElement('button');
     newList.innerHTML = item;
-    newButton.innerHTML = "❌";
+    newButton.innerHTML = '❌';
     listId.appendChild(newList);
     newList.appendChild(newButton);
-    newButton.addEventListener("click", () => {
+    newButton.addEventListener('click', () => {
         listId.removeChild(newList);
         deleteChapter(item);
     });
@@ -39,13 +39,13 @@ chaptersArray.forEach(chapter => {
 
 button.addEventListener('click', () => {
     if (inputId.value.length === 0) {
-        alert("Input is empty; please enter something.");
+        alert('Input is empty; please enter something.');
         inputId.focus();
     } else {
         displayList(inputId.value);
         chaptersArray.push(inputId.value);
         setChapterList();
-        inputId.value = "";
+        inputId.value = '';
         inputId.focus();
     }
 });

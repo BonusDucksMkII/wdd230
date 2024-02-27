@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/base.css">
 
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 
     <title>Bluebell Chamber of Commerce</title>
 </head>
@@ -23,9 +24,12 @@
     <div id="header-container">
         <header>
             <h1>Bluebell Chamber of Commerce</h1>
-            <a href="#current-events">Current Events</a>
-            <a href="#weather">Weather</a>
-            <a href="#company-spotlight">Company Spotlight</a>
+            <nav id="nav-menu">
+                <a id="menu" href="#"></a>
+                <a href="#current-events">Current Events</a>
+                <a href="#weather">Weather</a>
+                <a href="#company-spotlight">Company Spotlight</a>
+            </nav>
             <label class="switch">
                 <!--Click events on labels trigger once for themselves and once for the input inside??-->
                 <input type="checkbox" id="dark-mode">
@@ -34,8 +38,14 @@
         </header>
     </div>
     <main>
-        <img id="hero-img" alt="Image of Bluebell Store and Grill" src="images/bluebell-store.jpg">
-        <button type="button" id="cta">Join!</button>
+        <div id="hero">
+            <picture>
+                <source srcset="images/bluebell-store-small.webp" media="(max-width: 375px)">
+                <source srcset="images/bluebell-store-medium.webp" media="(max-width: 768px)">
+                <img id="hero-img" alt="Image of Bluebell Store and Grill" src="images/bluebell-store.webp">
+            </picture>
+            <button type="button" id="cta">Join!</button>
+        </div>
         <section id="current-events">
             <h2>Current Events</h2>
             <img alt="something current" src="">

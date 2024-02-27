@@ -14,8 +14,6 @@
 }
 
 header {
-    display: flex;
-    flex-direction: column;
     font-family: var(--headerfont);
     background-color: var(--primary-color);
     text-align: center;
@@ -24,6 +22,12 @@ header {
 header h1 {
     color: var(--accent-2);
     margin-left: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
 header a{
@@ -59,6 +63,19 @@ h2 {
 #cta:hover {
     background-color: var(--accent-1);
     color: var(--primary-color);
+}
+
+#hero{
+    display: flex;
+}
+
+#hero button {
+    margin: auto;
+}
+
+#hero-img{
+    justify-content: center;
+    align-self: center;
 }
 
 /* The switch - the box around the slider */
@@ -120,7 +137,27 @@ input:checked + .slider:before {
     color: white;
 }
 
-@media screen and (min-width: 480px){
+/* ham menu */
+#menu{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#menu::before{
+    content:"≡";
+}
+
+#menu.show::before{
+    content:"X";
+}
+
+.show a{
+    display:block;
+}
+
+
+/* media queries start */
+@media screen and (min-width: 375px){
     header {
         flex-direction: row;
     }
@@ -135,5 +172,9 @@ input:checked + .slider:before {
 
     #header-container {
         width: 100%;
+    }
+
+    #menu{
+        display:none;
     }
 }

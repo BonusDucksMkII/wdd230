@@ -1,6 +1,9 @@
 const darkButton = document.querySelector("#dark-mode");
 const main = document.querySelector("main");
 
+const nav = document.querySelector("#nav-menu");
+const hamButton = document.querySelector("#menu");
+
 darkButton.addEventListener("click", () => {
     console.log("clickd")
     if (main.classList.contains('dark-mode')) {
@@ -10,7 +13,13 @@ darkButton.addEventListener("click", () => {
         // console.log("bye")
         main.className = 'dark-mode';
     }
-})
+});
+
+hamButton.addEventListener('click', () => {
+	nav.classList.toggle('show');
+	hamButton.classList.toggle('show');
+});
+
 
 // Date modified
 const dateModified = document.querySelector("#date");

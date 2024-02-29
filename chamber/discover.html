@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="styles/base.css">
 
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    
+    <!-- <script src="scripts/windchill.js" defer></script> -->
 
     <title>Bluebell Chamber of Commerce</title>
 </head>
@@ -24,7 +25,7 @@
     <div id="header-container">
         <header>
             <h1>Bluebell Chamber of Commerce</h1>
-            <nav class="nav-menu">
+            <nav id="nav-menu">
                 <a id="menu" href="#"></a>
                 <a href="#current-events">Current Events</a>
                 <a href="#weather">Weather</a>
@@ -37,25 +38,36 @@
             </label>
         </header>
     </div>
-    <main>
-        <div id="hero">
-            <picture>
-                <source srcset="images/bluebell-store-small.webp" media="(max-width: 375px)">
-                <source srcset="images/bluebell-store-medium.webp" media="(max-width: 768px)">
-                <img id="hero-img" alt="Image of Bluebell Store and Grill" src="images/bluebell-store.webp">
-            </picture>
-            <button type="button" id="cta">Join!</button>
+    <div id="welcome">
+        <p></p>
+    </div>
+    <main id="discover">
+        <div id="sidebar">
+            <div id="current">
+                <h3>Hi</h3>
+                <p>Things and stuff</p>
+            </div>
+            <div id="calendar">
+                <something></something>
+            </div>
+            <div id="stats">
+                <h3>Site Visits</h3>
+            </div>
         </div>
-        <section id="current-events">
-            <h2>Current Events</h2>
-            <img alt="something current" src="">
-        </section>
-        <section id="weather">
-            <h2>Weather</h2>
-        </section>
-        <section id="company-spotlight">
-            <h2>Company Spotlight</h2>
-        </section>
+        <div id="imgs">
+            <img loading="lazy" alt="Junk In The Trunk Local" src="images/discover/junktrunk.webp">
+            <p>Junk In The Trunk</p>
+            <img loading="lazy" alt="Local Property" src="images/discover/horse_pen.webp">
+            <p>Local Property</p>
+            <img loading="lazy" alt="Bluebell Corn Maze" src="images/discover/water-hollow-ranch-ut_99276.webp">
+            <p>Bluebell Corn Maze</p>
+            <img loading="lazy" alt="Downtown Roosevelt" src="images/discover/downtown_roosevelt.webp">
+            <p>Downtown Roosevelt</p>
+            <img loading="lazy" alt="Vernal Temple" src="images/discover/vernal-utah-temple-40521-main.webp">
+            <p>Vernal Temple</p>
+            <img loading="lazy" alt="Dinah the Dino" src="images/discover/East_entry_to_Vernal,_Utah,_on_US-40_(7063605801).webp">
+            <p>Dinah the Dino on US-40</p>
+        </div>
     </main>
     <footer>
         <h2>Contact Info</h2>

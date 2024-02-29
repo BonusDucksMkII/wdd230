@@ -24,12 +24,6 @@ header h1 {
     margin-left: auto;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
 header a{
     margin: auto;
     text-align: center;
@@ -141,6 +135,8 @@ input:checked + .slider:before {
 #menu{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    padding: 10px 15px;
+    display: inline;
 }
 
 #menu::before{
@@ -151,18 +147,66 @@ input:checked + .slider:before {
     content:"X";
 }
 
-.show a{
-    display:block;
+.nav-menu a{
+    display: none;
+    color: var(--accent-1);
+    font-size: 28px;
+    padding: 10px;
 }
 
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.show a{
+    display: block;
+}
+
+#discover{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+#sidebar div{
+    padding: 10px;
+    grid-column: 1/2;
+    width: 450px;
+    border: black solid 2px;
+}
+
+#imgs{
+    display: grid;
+    grid-column: 2/3;
+    justify-items: center;
+}
+
+#imgs img{
+    margin: auto;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+#imgs img:hover{
+    background-color: rgb(180, 180, 180);
+    opacity: 0.3;
+}
+
+#imgs p{
+    font-family: var(--headerfont);
+    font-size: 24px;
+}
 
 /* media queries start */
 @media screen and (min-width: 375px){
-    header {
+    .nav-menu {
         flex-direction: row;
     }
 
-    header a{
+    .nav-menu a{
         display: flex;
         margin: auto;
         text-align: center;

@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Oswald', sans-serif;
-    text-align: center;
     align-items: center;
     max-width: 1200px;
     margin-left: auto;
@@ -27,11 +26,12 @@ header{
     width: auto;
 }
 
-main{
+#home{
     margin: 35px;
+    text-align: center;
 }
 
-main ul{
+#home ul{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -54,6 +54,7 @@ a:hover{
 footer{
     border: 3px solid black;
     border-radius: 10px;
+    text-align: center;
 }
 
 #menu{
@@ -108,6 +109,43 @@ iframe{
     font-size: 36px;
     color: white;
     text-shadow: white 1px 0 10px;
+}
+
+/*-------Begin form.html CSS-------------*/
+
+.form-practice input[type="text"],
+.form-practice input[type="password"],
+.form-practice input[type="email"],
+.form-practice input[type="range"]{
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    max-width: 410px;
+}
+
+.form-practice input[type="submit"]{
+    margin: 5px 0;
+    display: block;
+}
+
+#range-value{
+    display: flex;
+    margin: 0 0 0 2px;
+	width: 440px;
+}
+
+#range-value option{
+    flex: 0.8 0.8 auto;
+}
+
+#message{
+    display: none;
+}
+
+#message.show{
+    color: red;
+    display: block;
+    margin: 5px 0;
 }
 
 @media screen and (min-width: 501px){

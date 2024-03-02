@@ -110,7 +110,7 @@ main {
     border-radius: 6px;
     padding: .75rem;
     margin: -1rem 2% 2rem 2%;
-    width: 96;
+    width: 96%;
     max-width: 400px;
     cursor: pointer;
 }

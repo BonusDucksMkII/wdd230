@@ -4,6 +4,16 @@ const main = document.querySelector("body");
 const nav = document.querySelector(".nav-menu");
 const hamButton = document.querySelector("#menu");
 
+const formDateTime = document.querySelector(".date-time");
+const formTel = document.querySelector("#mobile-num");
+
+// let formInputs = document.getElementsByTagName("input");
+// Array.from(formInputs).forEach(element => {
+//     element.addEventListener("focusout", () => {
+//         console.log("Hi");
+//     });
+// });
+
 let visitDate = localStorage.getItem("visitDate");
 
 function milliseconds_to_days(time){
@@ -38,21 +48,34 @@ document.querySelector("#personal").innerHTML = `Jonathan Todd - BYU-I WDD 230 A
 
 
 // Visitor welcome/visit counter
-if (!visitDate){
-    welcome.textContent = `Welcome! Let us know if you have any questions`;
-    visitDate = Date.now();
-    localStorage.setItem("visitDate", visitDate);
-} else {
-    visitDate = Number(localStorage.getItem("visitDate"));
-    today = Date.now();
-    difference = today - visitDate;
-    test = true;
-    if (difference > 86400000){
-        console.log(difference);
-        welcome.textContent = milliseconds_to_days(difference) > 1 ? `You last visited ${milliseconds_to_days(difference)} days ago.`: `You last visited ${milliseconds_to_days(difference)} day ago.`;
-        localStorage.setItem("visitDate", today);
+try {
+    if (!visitDate){
+        welcome.textContent = `Welcome! Let us know if you have any questions`;
+        visitDate = Date.now();
+        localStorage.setItem("visitDate", visitDate);
     } else {
-        console.log(difference);
-        welcome.textContent = `Back so soon? Awesome!`;
+        visitDate = Number(localStorage.getItem("visitDate"));
+        today = Date.now();
+        difference = today - visitDate;
+        test = true;
+        if (difference > 86400000){
+            console.log(difference);
+            welcome.textContent = milliseconds_to_days(difference) > 1 ? `You last visited ${milliseconds_to_days(difference)} days ago.`: `You last visited ${milliseconds_to_days(difference)} day ago.`;
+            localStorage.setItem("visitDate", today);
+        } else {
+            console.log(difference);
+            welcome.textContent = `Back so soon? Awesome!`;
+        }
     }
+} catch (ReferenceError) {
+    console.log("This page doesn't have these elements.");
 }
+
+
+// Form page stuff
+try {
+    formDateTime.value = Date.now();
+} catch (ReferenceError) {
+    console.log("This page doesn't have these elements.");
+}
+

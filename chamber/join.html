@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jonathan Todd">
+    <meta name='description' content="WDD230 Chamber of Commerce assignment">
+
+    <meta property="og:title" content="Jonathan Todd - WDD 230 - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/p/AF1QipOUijT-qFi--Xewg1goI2PszvXYuF2H7D08-sf3=w1080-h608-p-k-no-v0">
+    <meta property="og:url" content="https://bonusducksmkii.github.io/wdd230/chamber/">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+
+    <title>Bluebell Chamber of Commerce</title>
+</head>
+<body>
+    <div id="header-container">
+        <header>
+            <h1>Bluebell Chamber of Commerce</h1>
+            <nav class="nav-menu">
+                <a id="menu" href="#"></a>
+                <a href="#current-events">Current Events</a>
+                <a href="#weather">Weather</a>
+                <a href="#company-spotlight">Company Spotlight</a>
+            </nav>
+            <label class="switch">
+                <!--Click events on labels trigger once for themselves and once for the input inside??-->
+                <input type="checkbox" id="dark-mode">
+                <span class="slider"></span>
+            </label>
+        </header>
+    </div>
+    <main>
+        <form method="get" action="thankyou.html" class="membership">
+            <fieldset>
+                <legend>Become A Member!</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title/Position* <input type="text" name="title" id="title" pattern="[a-zA-Z\s-]{7,}" required></label>
+                <label>Contact Email* <input type="email" name="email" id="email" placeholder="example@mail.com" autocomplete required></label>
+                <label>Mobile Phone Number* <input type="tel" name="mobile-num" id="mobile-num" pattern="[0-9]{10}" required></label>
+                <label>Business/Organization Name* <input type="text" name="org-name" id="org-name" required></label>
+                <div class="radio-line">Membership Level* 
+                    <label><input type="radio" name="np" id="np" value="NP (Non-profit)" required>NP (Non-profit)💸</label>
+                    <label><input type="radio" name="bronze" id="bronze" value="Bronze" required>Bronze🥉</label>
+                    <label><input type="radio" name="silver" id="silver" value="Silver" required>Silver🥈</label>
+                    <label><input type="radio" name="gold" id="gold" value="Gold" required>Gold🥇</label>
+                </div>
+                <label>Organization Description
+                    <textarea name="description" rows="5" cols="30" minlength="50" maxlength="250" placeholder="Describe your organization here."></textarea>
+                </label>
+                <input type="hidden" class="date-time">
+                <button type="submit" name="join">Join Us!</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h2>Contact Info</h2>
+        <p id="personal"></p>
+        <p id="date"></p>
+    </footer>
+</body>
+</html>

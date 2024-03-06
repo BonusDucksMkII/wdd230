@@ -1,0 +1,43 @@
+{
+    "familyInfo":{
+        "familyName": "Jones",
+        "moveInDate": "01/24/2008",
+        "totalFamilyMembers": 5,
+        "familyMembers":[
+            {
+                "role": "Father",
+                "firstName": "Armen",
+                "gender": "Male",
+                "birthDate": "04/10/1969",
+                "baptized": true
+            },
+            {
+                "role": "Mother",
+                "firstName": "Sally",
+                "gender": "Female",
+                "birthDate": "09/26/1971",
+                "baptized": true
+            },
+            {
+                "role": "Son",
+                "firstName": "Marco",
+                "gender": "Male",
+                "birthDate": "06/17/1999",
+                "baptized": true
+            },
+            {
+                "role": "Son",
+                "firstName": "Isaac",
+                "gender": "Male",
+                "birthDate": "11/02/2002",
+                "baptized": true
+            },
+            {
+                "role": "Daughter",
+                "firstName": "Lily",
+                "gender": "Female",
+                "birthDate": "07/23/2005"
+            }
+        ]
+    }
+}

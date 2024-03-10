@@ -7,6 +7,10 @@ const hamButton = document.querySelector("#menu");
 const formDateTime = document.querySelector(".date-time");
 const formTel = document.querySelector("#mobile-num");
 
+const directoryURL = "./data/members.json";
+const directoryDiv = document.querySelector(".directory-list");
+const directoryCheck = document.querySelector(".grid-directory");
+
 // let formInputs = document.getElementsByTagName("input");
 // Array.from(formInputs).forEach(element => {
 //     element.addEventListener("focusout", () => {
@@ -19,6 +23,51 @@ let visitDate = localStorage.getItem("visitDate");
 function milliseconds_to_days(time){
     time /= 86400000;
     return Math.round(time);
+}
+
+function displayMembersList(jsonData){
+    jsonData.members.forEach(company => {
+        const directoryList = document.createElement("div");
+        const directoryName = document.createElement("h3");
+        directoryName.innerText = `${company.companyInfo[0]}`;
+        directoryList.append(directoryName);
+        for (i = 1; i < (company.companyInfo.length); i++){
+            const directoryThing = document.createElement("p");
+            if (i == 3){
+                directoryThing.innerHTML = `<a href=${company.companyInfo[i]}>${company.companyInfo[i]}</a>`;
+            } else if (i == 5) {
+                switch (company.companyInfo[i]){
+                    case 1:
+                        directoryThing.innerText = 'Non-Profit 💸';
+                        directoryThing.style.fontSize = "18px";
+                        break;
+                    case 2:
+                        directoryThing.innerText = 'Bronze 🥉';
+                        directoryThing.style.fontSize = "18px";
+                        break;
+                    case 3:
+                        directoryThing.innerText = 'Silver 🥈';
+                        directoryThing.style.fontSize = "18px";
+                        break;
+                    case 4:
+                        directoryThing.innerText = 'Gold 🥇';
+                        directoryThing.style.fontSize = "18px";
+                        break;
+                }
+            } else {
+                directoryThing.innerText = `${company.companyInfo[i]}`;
+            }
+            directoryList.append(directoryThing);
+        };
+        console.log(company.companyInfo[0]);
+        directoryDiv.append(directoryList);
+    });
+}
+
+async function fetchMembers(url){
+    const response = await fetch(url);
+    const data = await response.json();
+    displayMembersList(data);
 }
 
 // Dark mode
@@ -79,3 +128,9 @@ try {
     console.log("This page doesn't have these elements.");
 }
 
+// Directory page
+directoryCheck.addEventListener('click', () => {
+    directoryDiv.classList.toggle('cards');
+});
+
+fetchMembers(directoryURL);

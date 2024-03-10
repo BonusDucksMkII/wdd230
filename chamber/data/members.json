@@ -1,0 +1,81 @@
+{
+    "members":[
+        {
+            "companyID": 1,
+            "companyInfo":[
+                "Bluebell Store and Grill",
+                "123 S 456 W",
+                "(123) 456-7890",
+                "https://www.example.com",
+                "",
+                3
+            ]
+        },
+        {
+            "companyID": 2,
+            "companyInfo":[
+                "Bluebell Corn Maze",
+                "123 S 456 W",
+                "(123) 456-7890",
+                "https://www.example.com",
+                "",
+                2
+            ]
+        },
+        {
+            "companyID":3,
+            "companyInfo":[
+                "Junk In the Trunk",
+                "123 S 456 W",
+                "(123) 456-7890",
+                "https://www.example.com",
+                "",
+                2
+            ]       
+        },
+        {
+            "companyID":4,
+            "companyInfo":[
+                "Strata Networks",
+                "211 East 200 North, Roosevelt, UT 84066",
+                "(123) 456-7890",
+                "https://stratanetworks.com/",
+                "",
+                4
+            ] 
+        },
+        {
+            "companyID": 5,
+            "companyInfo":[
+                "Bluebell Store and Grill",
+                "123 S 456 W",
+                "(123) 456-7890",
+                "https://www.example.com",
+                "",
+                1
+            ]  
+        },
+        {
+            "companyID": 6,
+            "companyInfo":[
+                "Bluebell Store and Grill",
+                "123 S 456 W",
+                "(123) 456-7890",
+                "https://www.example.com",
+                "",
+                1
+            ] 
+        },
+        {
+            "companyID": 7,
+            "companyInfo":[
+                "Bluebell Store and Grill",
+                "123 S 456 W",
+                "(123) 456-7890",
+                "https://www.example.com",
+                "",
+                1
+            ]
+        }
+    ]
+}

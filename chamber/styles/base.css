@@ -7,10 +7,16 @@
     --accent-2: #F1FFFA;
     --accent-3: #D5C7BC;
     --headerfont: Caveat, 'Times New Roman', 'Sans Serif';
+    --bodyfont: Arial, Helvetica, sans-serif;
+}
+
+*{
+    font-family: var(--bodyfont);
 }
 
 #header-container {
     width: 100%;
+    font-family: var(--headerfont);
 }
 
 header {
@@ -26,7 +32,6 @@ header h1 {
 
 header a{
     margin: auto;
-    text-align: center;
     font-size: 32px;
     color: var(--accent-1)
 }
@@ -236,6 +241,12 @@ input:checked + .slider:before {
     font-size: 18px;
 }
 
+.membership input[type="radio"]{
+    margin-bottom: 2px;
+    margin-right: 8px;
+    display: block;
+}
+
 .membership input:placeholder-shown,
 .membership textarea:placeholder-shown{
     font-style: italic;
@@ -250,12 +261,6 @@ input:checked + .slider:before {
 .radio-line label{
     margin-top: 10px;
     display: flex;
-}
-
-.membership input[type="radio"]{
-    margin-bottom: 2px;
-    margin-right: 8px;
-    display: block;
 }
 
 .membership textarea{
@@ -289,6 +294,37 @@ input:checked + .slider:before {
 .membership button:hover{
     background-image: linear-gradient(var(--primary-color), #037ed6);
 }
+
+.directory-list{
+    margin: 100px auto;
+    max-width: 1500px;
+}
+
+.directory-list div, .directory-list div *{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    padding: 0px;
+    list-style: none;
+    text-wrap: wrap;
+}
+
+.directory-list.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    transition: 0.5s;
+    max-width: 1400px;
+}
+
+.cards div{
+    display: flex;
+    flex-direction: column;
+    background-color: #D5C7BC;
+    padding: 15px;
+    width: 300px;
+    margin: 10px auto;
+}
+
 
 /* media queries start */
 @media screen and (min-width: 375px){

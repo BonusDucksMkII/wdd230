@@ -306,7 +306,8 @@ input:checked + .slider:before {
     margin: 10px auto;
     padding: 0px;
     list-style: none;
-    text-wrap: wrap;
+    text-align: left;
+    transition: 0.5s;
 }
 
 .directory-list.cards{

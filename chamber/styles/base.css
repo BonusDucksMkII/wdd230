@@ -326,6 +326,15 @@ input:checked + .slider:before {
     margin: 10px auto;
 }
 
+.card{
+    display: flex;
+    flex-direction: row;
+    background-color: #f5eae2;
+    padding: 20px;
+    max-width: 250px;
+    margin: 10px auto;
+}
+
 
 /* media queries start */
 @media screen and (min-width: 375px){

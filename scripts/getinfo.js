@@ -26,12 +26,11 @@ async function getWeather(url){
 }
 
 function displayWeather(apiData){
-    const regex = /[\s]/
     let space = apiData.weather[0].description.split(' ');
     console.log(apiData.weather[0].description.split(' '));
     let newString = `${space[0][0].toUpperCase() + space[0].slice(1)} ${space[1][0].toUpperCase() + space[1].slice(1)}`;
     weather.innerHTML= `<img src=\'https://openweathermap.org/img/w/${apiData.weather[0].icon}.png\' alt=\'weather icon\'> 
-                        ${apiData.main.temp}° F - ${newString}`;
+                        ${Math.round(apiData.main.temp)}° F - ${newString}`;
 }
 
 let pageVisits = Number(window.localStorage.getItem("pageVisits")) || 0;

@@ -7,7 +7,7 @@ const hamButton = document.querySelector("#menu");
 const formDateTime = document.querySelector(".date-time");
 const formTel = document.querySelector("#mobile-num");
 
-const directoryURL = "./data/members.json";
+const directoryURL = "../data/members.json";
 const directoryDiv = document.querySelector(".directory-list");
 const directoryCheck = document.querySelector(".grid-directory");
 

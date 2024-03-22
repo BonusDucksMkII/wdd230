@@ -20,20 +20,29 @@
 }
 
 header {
+    width: 100%;
     font-family: var(--headerfont);
     background-color: var(--primary-color);
     text-align: center;
 }
 
 header h1 {
-    color: var(--accent-2);
+    padding-top: 15px;
+    color: var(--accent-1);
     margin-left: auto;
+    font-style: italic;
 }
 
-header a{
+.nav-menu a{
+    display: none;
     margin: auto;
     font-size: 32px;
-    color: var(--accent-1)
+    color: var(--primary-color);
+    background-color: white;
+    border: 3px solid var(--accent-3);
+    border-radius: 6px;
+    font-size: 28px;
+    padding: 10px;
 }
 
 a:link {
@@ -150,13 +159,6 @@ input:checked + .slider:before {
 
 #menu.show::before{
     content:"X";
-}
-
-.nav-menu a{
-    display: none;
-    color: var(--accent-1);
-    font-size: 28px;
-    padding: 10px;
 }
 
 .nav-menu {
@@ -347,7 +349,6 @@ input:checked + .slider:before {
         margin: auto;
         text-align: center;
         font-size: 32px;
-        color: var(--accent-1)
     }
 
     #header-container {

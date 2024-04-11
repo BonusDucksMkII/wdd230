@@ -1,0 +1,9 @@
+/*If device is screen and viewport is bigger than 376px ???*/
+@media screen and (min-width: 376px){
+    #weather{
+        /* display: flex;
+        justify-content: space-between; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

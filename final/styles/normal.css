@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root{
+    --header-font: 'Russo One', 'Times New Roman', 'Sans Serif';
+    --other-font: 'Lato', 'Helvetica', 'Roboto';
+}
+
+*{
+    font-family: var(--other-font);
+}
+
+a{   
+    text-decoration: none;
+    font-size: 48px;
+    font-family: var(--header-font);
+    margin: 25px 50px;
+    color:black;
+}
+
+a:hover{
+    font-style: italic;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url(../images/pexels-photo-2155728.jpeg);
+}
+
+h1{
+    font-style: italic;
+    font-size: 120px;
+    font-family: var(--header-font);
+    background-image: linear-gradient(#b3e2e4, #438ec0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+}
+
+#weather{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #438ec0;
+    margin: 50px;
+    width: 250px;
+    justify-self: center;
+    justify-content: center;
+}
+
+.card *{
+    margin: 25px;
+    font-size: 18px;
+}
+
+.rentals{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+}
+
+.rental-card{
+    margin: 30px auto;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #1f6ea7;
+    border-radius: 8px;
+    width: 500px;
+    background-color: #cbe9fd;
+}
+
+/*-----------Start forms--------------*/
+
+.rental-info fieldset{
+    margin-top: 10px;
+    max-width: 50%;
+    border: solid 3px black;
+    border-radius: 6px;
+    margin: 20px auto auto auto;
+    font-size: 24px;
+}
+
+.rental-info legend{
+    font-style: italic;
+}
+
+.rental-info label{
+    font-size: 18px;
+    color:#1f6ea7;
+}
+
+.rental-info input[type="text"],
+.rental-info input[type="email"],
+.rental-info input[type="tel"],
+.rental-info input[type="date"]{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 10px 0;
+    background-color: #eee;
+    border: solid thin #bbb;
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    font-size: 18px;
+}
+
+select{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 10px 0;
+    background-color: #eee;
+    border: solid thin #bbb;
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    font-size: 18px;
+}
+
+.rental-info input:placeholder-shown,
+.rental-info textarea:placeholder-shown{
+    font-style: italic;
+}
+
+.radio-line{
+    margin: 10px 0;
+    font-size: 18px;
+    color:#1f6ea7;
+}
+
+.radio-line label{
+    margin-top: 10px;
+    display: flex;
+}
+
+.rental-info button{
+    border: none;
+    color: #000;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: var(--headerfont);
+    margin: 20px 0 0 0;
+}
+
+.rental-info textarea{
+    display: block;
+    margin-top: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    min-height: 150px;
+    border: solid thin #bbb;
+    border-radius: 6px;
+    padding: 8px;
+    resize: none;
+    font-size: 18px;
+}
+
+.contact-us{
+    margin: auto;
+    text-align: left;
+}
+
+.high-temp{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: #438ec0 2px solid;
+}
+
+.high-temp p, .high-temp a{
+    margin: 20px auto;
+}
+
+.high-temp a:hover{
+    font-style: normal;
+    border: 2px black solid;
+}
+
+.high-temp.hide{
+    display: none;
+}

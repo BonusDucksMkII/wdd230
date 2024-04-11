@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jonathan Todd">
+    <meta name='description' content="WDD230 Final Project">
+
+    <meta property="og:title" content="Jonathan Todd - WDD 230 - Final Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/p/AF1QipOUijT-qFi--Xewg1goI2PszvXYuF2H7D08-sf3=w1080-h608-p-k-no-v0">
+    <meta property="og:url" content="https://bonusducksmkii.github.io/wdd230/chamber/">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/forms.js" defer></script>
+
+    <title>Scoots</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </header>
+    <main>
+        <h1>Scoots</h1>
+        <h2>Rental Agreement</h2>
+        <form method="get" action="thankyou.html" class="rental-info">
+            <fieldset>
+                <legend>Rental Info</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Date* <input type="date" name="title" id="title" pattern="[0-9\]" required></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="example@mail.com" required></label>
+                <label>Mobile Phone Number* <input type="tel" name="mobile-num" id="mobile-num" pattern="[0-9]{10}" required></label>
+                <label for="rentals">Rental* </label>
+                <select id="rentals">
+                    <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                    <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                    <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                    <option value="Honda Pioneer ATV">Honda Pioneer ATV"</option>
+                    <option value="Jeep Wrangler - 4 Door With A/C">Jeep Wrangler - 4 Door With A/C</option>
+                    <option value="Jeep Wrangler - 2 Door">Jeep Wrangler - 2 Door</option>
+                </select>
+                <label for="rent-time">Length of Time* </label>
+                <select id="rent-time">
+                    <option value="Half Day (3 hrs)">Half Day (3 hrs)</option>
+                    <option value="Full Day">Full Day</option>
+                </select>
+                <label for="country" id="country-label">Country* <input type="text" name="country" id="country" required></label>
+                <label for="state" id="state-label">State <input type="text" name="state" id="state"></label>
+                <label>
+                    Special Accomodations or Comments
+                    <textarea name="description" rows="5" cols="30" minlength="50" maxlength="250" placeholder=""></textarea>
+                </label>
+                <input type="hidden" class="date-time">
+                <button type="submit" name="join">Rent Now!</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

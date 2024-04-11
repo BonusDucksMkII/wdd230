@@ -1,0 +1,124 @@
+{
+    "options":[
+        {
+            "rentalId": 1,
+            "name": "Honda Metro Scooter",
+            "capacity": 1,
+            "description":"",
+            "reservationPrice":
+            {
+                "reservation":
+                [
+                    20,
+                    30
+                ],
+                "walkIn":
+                [
+                    25,
+                    35
+                ]
+            },
+            "image": ""
+        },
+        {
+            "rentalId": 2,
+            "name": "Honda Dio Scooter",
+            "capacity": 2, 
+            "description":"",
+            "reservationPrice":
+            {
+                "reservation":
+                [
+                    30,
+                    40
+                ],
+                "walkIn":
+                [
+                    35,
+                    45
+                ]
+            },
+            "image": ""
+        },
+        {
+            "rentalId": 3,
+            "name": "Honda PCX150 Scooter",
+            "capacity": 2,
+            "description":"",
+            "reservationPrice":
+            {
+                "reservation":
+                [
+                    40,
+                    50
+                ],
+                "walkIn":
+                [
+                    45,
+                    55
+                ]
+            },
+            "image": ""
+        },
+        {
+            "rentalId": 4,
+            "name": "Honda Pioneer ATV",
+            "capacity": 4,
+            "description":"",
+            "reservationPrice":
+            {
+                "reservation":
+                [
+                    50,
+                    70
+                ],
+                "walkIn":
+                [
+                    60,
+                    80
+                ]
+            },
+            "image": ""
+        },
+        {
+            "rentalId": 5,
+            "name": "Jeep Wrangler - 4 door with a/c",
+            "capacity": 5,
+            "description":"",
+            "reservationPrice":
+            {
+                "reservation":
+                [
+                    70,
+                    100
+                ],
+                "walkIn":
+                [
+                    85,
+                    125
+                ]
+            },
+            "image": ""
+        },
+        {
+            "rentalId": 6,
+            "name": "Jeep Wrangler - 2 door",
+            "capacity": 4,
+            "description":"",
+            "reservationPrice":
+            {
+                "reservation":
+                [
+                    60,
+                    85
+                ],
+                "walkIn":
+                [
+                    70,
+                    90
+                ]
+            },
+            "image": ""
+        }
+    ]
+}
